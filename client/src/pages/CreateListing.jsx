@@ -1,3 +1,4 @@
+const CreateListing = () => {
 <main className="p-9 max-w-4xl mx-auto mt-32 bg-gray-50 rounded-lg shadow-lg">
   <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
     Create a Listing
@@ -185,3 +186,5 @@
     </div>
   </form>
 </main>
+}
+export default CreateListing;

@@ -129,9 +129,9 @@ export default function Search() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row mt-32">
       {/* Sidebar */}
-      <div className="p-7 border-b-2 md:border-r-2 md:min-h-screen bg-gray-50">
+      <div className="p-9 border-b-2 md:border-r-2 md:min-h-screen bg-gray-50">
         <form onSubmit={handleSubmit} className="flex flex-col gap-8">
           <div className="flex items-center gap-2">
             <label className="whitespace-nowrap font-semibold">
@@ -234,7 +234,7 @@ export default function Search() {
 
       {/* Listings */}
       <div className="flex-1">
-        <h1 className="text-3xl font-semibold border-b p-3 text-slate-700 mt-5">
+        <h1 className="text-3xl font-semibold border-b p-3 text-slate-700 ">
           Listing results:
         </h1>
         <div className="p-7 flex flex-wrap gap-4">

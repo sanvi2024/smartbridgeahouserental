@@ -63,7 +63,7 @@ export default function Listing() {
   };
 
   return (
-    <main className="min-h-screen bg-gray-100">
+    <main className="min-h-screen  bg-gray-100 mt-32 mx-32 pb-8">
       {loading && (
         <div className="flex justify-center items-center h-64">
           <p className="text-2xl text-gray-600 font-medium">Loading...</p>
@@ -75,7 +75,7 @@ export default function Listing() {
         </div>
       )}
       {listing && !loading && !error && (
-        <div className="max-w-6xl mx-auto py-8">
+        <div className="max-w-6xl mx-auto mt-32 py-8">
           {/* Swiper Section */}
           <div className="relative">
             <Swiper

@@ -22,6 +22,7 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const MONGO_URI = process.env.MONGO_URI;
 
+// to connect the mongodb using the mongodburl if connection is sucessful then it will print the message "Connected to MongoDB!" otherwise it will print the error message
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB!');
@@ -33,26 +34,32 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 // const __dirname = path.resolve(); // Removed duplicate declaration
 
+
+// to create instance of express application
 const app = express();
 
+// for adding moddleware to incoming requests from the client in json format 
 app.use(express.json());
 
 app.use(cookieParser());
 
+// to run the server on port 3000 if the server is running then it will print the message "Server is running on port 3000!" otherwise it will print the error message
 app.listen(3000, () => {
   console.log('Server is running on port 3000!');
 });
 
+//  to route the incoming requests to the respective routers
 app.use('/api/user', userRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/listing', listingRouter);
 
 
-app.use(express.static(path.join(__dirname, '/client/dist')));
+// app.use(express.static(path.join(__dirname, '/client/dist')));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
-})
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+// })
+
 
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;

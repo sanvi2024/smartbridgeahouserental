@@ -27,7 +27,6 @@ export default function SignUp() {
         body: JSON.stringify(formData),
       });
       const data = await res.json();
-      console.log(data);
       if (data.success === false) {
         setLoading(false);
         setError(data.message);
@@ -43,53 +42,67 @@ export default function SignUp() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-<div className="p-9 max-w-md mx-auto bg-white shadow-md rounded-lg">
-      <h1 className="text-3xl text-center font-semibold my-7 text-gray-800">
-        Sign Up
-      </h1>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-        <input
-          type="text"
-          placeholder="Username"
-          className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-500"
-          id="username"
-          onChange={handleChange}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-500"
-          id="email"
-          onChange={handleChange}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          className="border p-3 rounded-lg focus:ring-2 focus:ring-blue-500"
-          id="password"
-          onChange={handleChange}
-        />
-        <button
-          disabled={loading}
-          className="bg-blue-600 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80"
-        >
-          {loading ? 'Loading...' : 'Sign Up'}
-        </button>
-        <OAuth />
-      </form>
-      <div className="flex justify-center gap-2 mt-5">
-        <p className="text-gray-600">Have an account?</p>
-        <Link to={'/sign-in'}>
-          <span className="text-blue-700 font-semibold hover:underline">
-            Sign in
-          </span>
-        </Link>
+    <div className='flex items-center justify-center min-h-screen bg-gray-50 px-4'>
+      <div className='w-full max-w-md bg-white shadow-lg rounded-2xl p-8 space-y-6'>
+        <h1 className='text-4xl font-bold text-center text-slate-800'>Sign Up</h1>
+        <form onSubmit={handleSubmit} className='space-y-4'>
+          <div>
+            <label htmlFor='username' className='block mb-1 text-sm font-medium text-gray-700'>
+              Username
+            </label>
+            <input
+              type='text'
+              id='username'
+              placeholder='johndoe'
+              className='w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-slate-600'
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor='email' className='block mb-1 text-sm font-medium text-gray-700'>
+              Email Address
+            </label>
+            <input
+              type='email'
+              id='email'
+              placeholder='you@example.com'
+              className='w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-slate-600'
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor='password' className='block mb-1 text-sm font-medium text-gray-700'>
+              Password
+            </label>
+            <input
+              type='password'
+              id='password'
+              placeholder='****'
+              className='w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-slate-600'
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <button
+            disabled={loading}
+            className='w-full bg-slate-700 text-white py-3 rounded-lg font-semibold text-lg hover:bg-slate-800 transition disabled:opacity-70'
+          >
+            {loading ? 'Signing Up...' : 'Sign Up'}
+          </button>
+          <OAuth />
+        </form>
+
+        <div className='text-sm text-center text-gray-600'>
+          Already have an account?{' '}
+          <Link to='/sign-in' className='text-blue-600 hover:underline'>
+            Sign In
+          </Link>
+        </div>
+
+        {error && <p className='text-center text-red-500 text-sm'>{error}</p>}
       </div>
-      {error && (
-        <p className="text-red-500 mt-5 text-center">{error}</p>
-      )}
-    </div>
     </div>
   );
 }

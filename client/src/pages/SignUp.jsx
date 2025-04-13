@@ -53,7 +53,7 @@ export default function SignUp() {
             <input
               type='text'
               id='username'
-              placeholder='johndoe'
+              placeholder='username'
               className='w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-slate-600'
               onChange={handleChange}
               required
@@ -66,7 +66,7 @@ export default function SignUp() {
             <input
               type='email'
               id='email'
-              placeholder='you@example.com'
+              placeholder='email'
               className='w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-slate-600'
               onChange={handleChange}
               required

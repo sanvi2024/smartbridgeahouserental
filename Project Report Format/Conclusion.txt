@@ -1,0 +1,4 @@
+The House Rental Web Application aims to simplify the rental property search process for the Indian market by providing an accessible, easy-to-use platform. With features like multiple registration 
+options, robust property listings, and user-friendly filters tailored to Indian cities and rental preferences, it addresses key pain points in India’s fragmented rental housing sector. While the 
+platform has successfully established core functionalities, the lack of an integrated payment gateway and advanced verification systems limits its full potential. Nonetheless, it lays a strong 
+foundation for a comprehensive online rental ecosystem in India.

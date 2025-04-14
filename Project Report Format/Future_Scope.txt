@@ -1,0 +1,8 @@
+● Integration with UPI & Payment Gateways: Adding Indian payment methods like UPI, Paytm, and debit/credit card integration for rent payments and deposits.
+● Aadhaar & PAN Verification: Introducing identity verification for tenants and landlords to ensure trust and authenticity.
+● Regional Language Support: Expanding the platform to include major Indian languages like Hindi, Tamil, Telugu, Bengali, and Marathi to reach a broader audience.
+● Mobile App Development: Building dedicated Android and iOS apps, considering India’s mobile-first internet user base.
+● Partnership with Local Agents: Collaborating with verified local property brokers and agents for better property availability.
+● Rent Agreement Generation: Offering automated rent agreement generation as per Indian tenancy laws.
+● Push Notifications & Alerts: For rent due dates, property availability, and promotions, especially useful for frequent mobile users.
+● AI-Based Property Recommendations: Personalizing property suggestions based on user preferences and browsing history.

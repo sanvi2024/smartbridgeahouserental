@@ -1,1 +1,14 @@
+Advantages:
+● Pan-India Accessibility: Users from any region in India can search for rental properties in major cities and towns.
+● Multiple Registration Options: Registration via Email, Gmail, or LinkedIn suits the growing Indian digital audience.
+● Efficient Search and Filter: Users can search for properties by city, locality, budget (in INR), and amenities like 24/7 water supply, furnished/unfurnished, near metro stations, etc.
+● Property Management for Owners: Property owners and real estate agents in India can list and manage multiple properties easily.
+● Email Confirmation Adds Security: Ensures valid users and reduces the risk of spam or fake accounts.
+● Supports Growing Digital India Movement: Aligns with India’s increasing shift toward online platforms for essential services, including rentals.
 
+Disadvantages:
+● No Payment Gateway Yet: Rent payments, security deposits, or token amounts still need to happen offline or via external payment methods like UPI or bank transfers.
+● Verification Challenges: Without integration of Aadhaar or PAN verification, there’s a risk of fake listings and unverified users.
+● Internet Dependence: In rural or low-connectivity areas, access might be limited.
+● No Regional Language Support Yet: The platform currently supports only English, which may be a barrier for non-English speaking users.
+● Mobile Browser Experience Needs Improvement: Indian users heavily use mobile browsers; optimization is pending.
